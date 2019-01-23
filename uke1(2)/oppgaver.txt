@@ -1,0 +1,156 @@
+Oppgave 1
+1a
+Lag et program som oppretter en array med plass til 10 int-er og fyller denne med alle sifferene mellom 0 og 10 i stigende rekkef�lge. 
+Skriv ut alle verdiene p� hver sin linje.
+
+Utskriften skal v�re:
+
+> 0
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7
+> 8
+> 9
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+1b
+Endre n� programmet slik at du f�r utskriften i motsatt rekkef�lge.
+
+Utskriften skal v�re:
+
+> 9
+> 8
+> 7
+> 6
+> 5
+> 4
+> 3
+> 2
+> 1
+> 0
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+1c
+Endre n� programmet fra a slik at utskriften n� er tallene i arrayet og summen av alle tallene som har blitt skrevet ut.
+
+Utskriften skal v�re:
+
+> 0 0
+> 1 1
+> 2 3
+> 3 6
+> 4 10
+> 5 15
+> 6 21
+> 7 28
+> 8 36
+> 9 45
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+1d
+Lag et program som oppretter en array med plass til 10 String-objekter. Fyll dette arrayet med * hvor plass/index 0 har �n * og hvor plass/index 9 har ti *-er, 
+alts� at hver plass inneholder plassnummer + 1 antall *-er. Skriv ut alle strengene p� hver sin linje.
+
+Utskriften skal v�re:
+
+> *
+> **
+> ***
+> ****
+> *****
+> ******
+> *******
+> ********
+> *********
+> **********
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+Oppgave 2
+Skriv en klasse HeiVerden.java. Klassen skal inneholde en main-metode. Inne i main-metoden skal programmet f�rst la brukeren oppgi en tekststreng med navnet sitt. 
+(hint: Bruk et Scanner-objekt til dette - husk � importere n�dvendig klasse). Endre deretter utskriften til bruker slik at navnet brukes. Eksempel p� utskrift:
+
+Eksempel p� utskrift:
+
+> Hei! Hva heter du?
+> Trude
+> Hei Trude! Velkommen til IN1010.
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+Oppgave 3
+3a
+Gitt en fil kalt ord.txt som inneholder ett ord p� hver linje. 
+Lag et program som skriver ut alle linjene sl�tt sammen til en setning/linje. Legg til et mellomrom etter hvert ord som blir lagt til.
+
+Eksempel:
+
+Filen ord.txt:
+
+dette
+er
+en
+setning
+Utskrift:
+
+dette er en setning
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+3b
+Utvid programmet i oppgave a slik at brukeren kan skrive inn navnet p� filen som skal leses.
+
+Eksempel p� utskrift:
+
+> Hvilken fil skal leses?
+> ord.txt
+> dette er en setning
+
+===============================================================================================================================================================
+===============================================================================================================================================================
+===============================================================================================================================================================
+
+Oppgave 4
+F�lgende klasseskjelett er gitt:
+
+class Kaningaard {
+    
+    private Kanin [] kaniner = new Kanin[100];
+    
+    public boolean full() { . . . }
+    public boolean tom () { . . . }
+    public Kanin finnEn(String navn) { . . . }
+    public void settInn (Kanin kanin) { . . . }
+    public void fjern(String navn) { . . . }
+}
+4a
+Skriv ferdig klassen Kaningaard ved � fylle ut metodene. Dere kan g� ut fra at alle kaniner skal ha forskjellig navn, 
+og derfor m� dere ta h�yde for at det ikke er lov � sette inn en kanin to ganger (alts� med samme navn som en i lista).
+Dere skal ogs� ta h�yde for noen andre problemer som kan oppst� og gi gode feilmeldinger. To eksempler er dersom man 
+fors�ker � sette inn en eller n�r man fors�ker � fjerne en kanin som ikke er i listen. Dere kan anta at klassen Kanin inneholder en metode hentNavn.
+
+4b
+Skriv et hovedprogram der dere gj�r minst tre tester av de forskjellige delene av klassen Kaningaard. 
+Test for eksempel tilfeller som innsetting av kanin ved full kaning�rd eller fjerning av ikke-eksisterende kanin.
+
+4c
+Tegn datastrukturen slik den ser ut etter at dere har kj�rt hovedprogrammet deres. (Tips: Se notatet om datastrukturtegninger p� emnets semesterside).
