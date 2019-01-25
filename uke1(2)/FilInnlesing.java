@@ -3,9 +3,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 /**
- * FileInnlesing
+ * FilInnlesing
  */
-public class FileInnlesing {
+public class FilInnlesing {
 
     public static void main(String[] args) {
         Scanner s = null;
