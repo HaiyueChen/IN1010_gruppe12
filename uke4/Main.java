@@ -24,10 +24,14 @@ public class Main {
         Hund h2 = new Hund("hund 1");
 
         int[] test = new int[10];
+        System.out.println(h1.equals(h2));
         System.out.println(h1.equals(test));
 
         //System.out.println(h1);
 
-
+        Test t1 = new Test();
+        Test t2 = new Test();
+        System.out.println(t1.id);
+        System.out.println(t2.id);
     }
 }

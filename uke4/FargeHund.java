@@ -17,5 +17,24 @@ public class FargeHund extends Hund{
     }
     */
 
+    @Override
+    public boolean equals(Object other){
+        if(other == null){
+            return false;
+        }
+        //catch exceptions
+        FargeHund casted = null;
+        try {
+            casted = (FargeHund) other;
+            
+        } catch (ClassCastException e) {
+            return false;
+        }
+        ///
+        System.out.println("calling custom equals");
+        return this.navn.equals(casted.navn) && this.farge.equals(casted.farge);
+
+    }
+
 
 }
