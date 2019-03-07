@@ -13,10 +13,11 @@ public class Main {
         // for (int i = 0; i < 4; i++) {
         //     System.out.println(l.get(i));
         // }
-
-        for (Integer var : l) {
-            System.out.println(var);
-        }
+        
+        // 
+        // for (Integer var : l) {
+            // System.out.println(var);
+        // }
 
     }
 }
