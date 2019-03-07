@@ -1,10 +1,10 @@
-// import java.util.Iterator;
+import java.util.Iterator;
 
 /**
  * LenkeListe
  */
-// public class LenkeListe<T> implements Iterable<T>{
-public class LenkeListe<T>{
+public class LenkeListe<T> implements Iterable<T>{
+// public class LenkeListe<T>{
     private class Node{
         T data;
         Node next = null;
@@ -16,26 +16,26 @@ public class LenkeListe<T>{
 
     }
 
-    // private class MyIterator implements Iterator<T>{
-        // Node itter = null;
-// 
-        // public T next(){
-            // if(itter == null){
-                // itter = head;
-                // return itter.data;
-            // }
-            // itter = itter.next;
-            // return itter.data;
-        // }
-// 
-        // public boolean hasNext(){
-            // if(itter == null){
-                // return head != null;
-            // }
-            // return itter.next != null;
-        // }
-// 
-    // }
+    private class MyIterator implements Iterator<T>{
+        Node itter = null;
+
+        public T next(){
+            if(itter == null){
+                itter = head;
+                return itter.data;
+            }
+            itter = itter.next;
+            return itter.data;
+        }
+
+        public boolean hasNext(){
+            if(itter == null){
+                return head != null;
+            }
+            return itter.next != null;
+        }
+
+    }
 
 
     public int size = 0;
@@ -67,9 +67,9 @@ public class LenkeListe<T>{
     }
 
 
-    // public Iterator<T> iterator(){
-        // return new MyIterator();
-    // }
+    public Iterator<T> iterator(){
+        return new MyIterator();
+    }
 
 
 
