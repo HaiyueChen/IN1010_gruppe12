@@ -5,19 +5,10 @@ import java.util.Iterator;
  */
 public class LenkeListe<T> implements Iterable<T>{
 // public class LenkeListe<T>{
-    private class Node{
-        T data;
-        Node next = null;
-        Node prev = null;
 
-        Node(T data){
-            this.data = data;
-        }
-
-    }
 
     private class MyIterator implements Iterator<T>{
-        Node itter = null;
+        Node<T> itter = null;
 
         public T next(){
             if(itter == null){
@@ -59,7 +50,7 @@ public class LenkeListe<T> implements Iterable<T>{
     public T get(int index){
         if(index < 0 || index > this.size - 1) throw new RuntimeException(String.format("Index %d not valid", index)); 
         
-        Node itter = head;
+        Node<T> itter = head;
         for (int i = 0; i < index; i++) {
             itter = itter.next;
         }
@@ -69,6 +60,15 @@ public class LenkeListe<T> implements Iterable<T>{
 
     public Iterator<T> iterator(){
         return new MyIterator();
+    }
+
+    public void printListe(){
+        Node itter = head;
+        for (int i = 0; i < size; i++) {
+            System.out.print(itter.data + "--> ");
+            itter = itter.next;
+        }
+        System.out.println("");
     }
 
 
