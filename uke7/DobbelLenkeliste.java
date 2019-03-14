@@ -1,13 +1,13 @@
 /**
  * Lenkeliste
  */
-public class Lenkeliste<T> implements Liste<T> {
+public class DobbelLenkeliste<T> implements Liste<T> {
 
     private DobbelNode<T> hode;
     private DobbelNode<T> hale;
     private int size;
 
-    public Lenkeliste(){
+    public DobbelLenkeliste(){
         this.hode = null;
         this.size = 0;
     }
